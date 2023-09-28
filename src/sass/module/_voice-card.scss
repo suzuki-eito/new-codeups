@@ -21,7 +21,7 @@
   display: flex;
   align-items: end;
   justify-content: space-between;
-  padding: 0 rem(13) 0 rem(16);
+  padding: 0 rem(16) 0 rem(16);
   @include mq("md") {
     padding-left: rem(24);
     padding-right: rem(24);
