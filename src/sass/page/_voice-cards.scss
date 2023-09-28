@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.voice-cards {
+  margin-top: rem(44);
+  @include mq("md") {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(40);
+    margin-top: rem(30);
+  }
+}
+
+.voice-cards::before {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    width: rem(301);
+    height: rem(138);
+    top: rem(-216);
+    // left: rem(-80);
+    left: calc(50% - min(50vw,620px));
+    background-image: url(../images/fish-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    transform: scale(-1,1);
+  }
+}
+
+.voice-cards::after {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    width: rem(71);
+    height: rem(162);
+    bottom: rem(-205);
+    right: rem(0);
+    background-image: url(../images/seahorse.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}

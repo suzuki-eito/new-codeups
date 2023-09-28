@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.about__box {
+  display: block;
+  @include mq("md") {
+    display: flex;
+    position: absolute;
+    top: rem(120);
+    right: rem(40);
+    z-index: 10;
+  }
+}

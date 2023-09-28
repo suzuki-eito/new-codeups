@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.blog__button {
+  margin-top: rem(38);
+  text-align: center;
+  transform: translateX(-2px);
+  @include mq("md") {
+    margin-top: rem(79);
+  }
+}

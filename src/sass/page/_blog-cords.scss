@@ -1,0 +1,29 @@
+@use "global" as *;
+
+.blog-cards {
+  margin-top: rem(28);
+  @include mq("md") {
+    margin-top: rem(80);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: rem(40);
+    position: relative;
+  }
+}
+
+.blog-cards::after {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    width: 40.50056%;
+    height: rem(201);
+    top: rem(-222);
+    left: rem(-80);
+    left: calc(50% - min(50vw,620px));
+    background-image: url(../images/fish-icon--white.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}

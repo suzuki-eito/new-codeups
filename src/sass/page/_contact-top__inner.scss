@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.contact-top__inner {
+  padding: 0 rem(40);
+  margin: 0 auto;
+  @include mq("md") {
+    padding: 0;
+    margin: 0;
+    padding-right: rem(83);
+    padding-left: rem(50);
+    position: relative;
+  }
+}
+
+.contact-top__inner::before {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    width: rem(1);
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: $main;
+  }
+}

@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.contact__title {
+  text-align: center;
+}
+
+.contact__title--en {
+  font-size: rem(80);
+  font-family: $gotu;
+  font-weight: 400;
+  color: $darkBlue;
+  line-height: lh(80,80);
+}
+
+.contact__title--en::first-letter {
+  color: $main;
+  text-transform: uppercase;
+}
+
+.contact__title--jp {
+  font-size: rem(12);
+  font-family: $noto-sans;
+  font-weight: 400;
+  color: $main;
+  line-height: lh(18,12);
+  margin-top: rem(-6);
+}
+
+.contact__title--link {
+  display: inline-block;
+  font-size: rem(14);
+  font-family: $noto-sans;
+  font-weight: 400;
+  color: $main;
+  line-height: lh(18,14);
+  margin-top: rem(8);
+}
+

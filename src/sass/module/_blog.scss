@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.blog {
+  position: relative;
+  z-index: 0;
+}
+
+.blog::before {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: rem(500);
+    top: 0;
+    left: 0;
+    background-image: url(../images/blog__bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+}

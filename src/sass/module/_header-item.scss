@@ -1,0 +1,55 @@
+@use "global" as *;
+
+.header-item {
+  height: inherit;
+}
+
+.header-item a {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 rem(20);
+
+  position: relative;
+}
+
+.header-item a::before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 1px;
+  background-color: $white;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  transition: transform .3s;
+}
+
+.header-item:hover.header-item a::before {
+  transform: translateX(-50%) scale(1);
+}
+
+.header-item__en {
+  font-size: rem(18);
+  font-family: $gotu;
+  font-weight: 400;
+  color: $white;
+  line-height: lh(18,18);
+}
+
+.header-item__en::first-letter {
+  text-transform: uppercase;
+}
+
+.header-item__jp {
+  font-size: rem(10);
+  font-family: $noto-sans;
+  font-weight: 400;
+  color: $white;
+  line-height: lh(15,10);
+  text-align: center;
+  margin-top: rem(4);
+}
+

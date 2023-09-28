@@ -1,0 +1,20 @@
+@use "global" as *;
+
+.copyright {
+  font-size: rem(12);
+  font-family: $gotu;
+  font-weight: 400;
+  color: $white;
+  line-height: lh(18,12);
+  display: inline-block;
+  width: 100%;
+
+  padding: 0 rem(14);
+  margin-top: rem(36);
+  text-align: center;
+  @include mq("md") {
+    font-size: rem(14);
+    line-height: lh(18,14);
+    margin-top: rem(77);
+  }
+}

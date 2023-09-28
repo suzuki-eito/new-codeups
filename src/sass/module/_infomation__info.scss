@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.information__box2 {
+  @include mq("md") {
+    margin-left: rem(48);
+    width: 45.5555556%;
+  }
+}

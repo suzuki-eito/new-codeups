@@ -1,0 +1,25 @@
+@use "global" as *;
+
+.contact__info {
+  font-size: rem(16);
+  font-family: $noto-sans;
+  font-weight: 400;
+  color: $darkBlue;
+  line-height: lh(24,16);
+  transform: translateX(-1px);
+  text-align: center;
+   @include mq("md") {
+     text-align: left;
+  }
+}
+
+.contact__info + .contact__info {
+  margin-top: rem(4);
+}
+
+.contact__info:nth-of-type(1) {
+  transform: translateX(-5px);
+  @include mq("md") {
+    transform: translateX(0px);
+  }
+}

@@ -1,0 +1,94 @@
+@use "global" as *;
+
+.button {
+  padding: rem(11) rem(88) rem(16) rem(40);
+  background-color: $main;
+  border: 1px solid $main;
+  display: inline-block;
+
+  position: relative;
+  z-index: 0;
+}
+
+.button::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 4px;
+  left: 4px;
+  border: 1px solid $main;
+  z-index: -1;
+}
+
+.button::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  // transform: translateX(-100%);
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path .3s;
+  z-index: 0;
+}
+
+.button__text {
+  font-family: $gotu;
+  font-size: rem(14);
+  line-height: lh(22,14);
+  color: $white;
+  transition: color .3s;
+
+  position: relative;
+  z-index: 1;
+}
+
+.button__text::before {
+  position: absolute;
+  content: "";
+  width: rem(40);
+  height: rem(1);
+  right: rem(-48);
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: $white;
+  transition: background-color .3s;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.button__text::after {
+  position: absolute;
+  content: "";
+  width: rem(8);
+  height: rem(1);
+  right: calc(rem(-48) - 1px);
+  top: calc(50% - 2px);
+  transform: translateY(-50%) rotate(37deg);
+  background-color: $white;
+  transition: background-color .3s;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+//buttonをホバーした時の挙動
+.button:hover.button::after {
+  clip-path: inset(0 0% 0 0);
+}
+
+.button:hover .button__text {
+  color: $main;
+}
+
+.button:hover .button__text::before {
+  background-color: $main;
+}
+
+.button:hover .button__text::after {
+  background-color: $main;
+
+}
+

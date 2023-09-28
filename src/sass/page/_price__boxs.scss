@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.price__boxs {
+  @include mq("md") {
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: rem(40);
+    justify-content: space-between;
+  }
+}
+
+.price__boxs::before {
+  @include mq("md") {
+    position: absolute;
+    content: "";
+    // width: rem(437);
+    width: 40.462962962962963%;
+
+    height: rem(201);
+    bottom: rem(-178);
+    left: calc(50% - min(50vw,620px));
+    background-image: url(../images/fish-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+}

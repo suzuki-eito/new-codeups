@@ -1,0 +1,15 @@
+@use "global" as *;
+
+  .blog__inner {
+    width: 100%;
+    max-width: 600px;
+    padding-right: 21px;
+    padding-left: 21px;
+    margin-right: auto;
+    margin-left: auto;
+    @include mq("md") {
+      max-width: $inner + strip-unit($padding-pc) * 2;
+      padding-right: $padding-pc;
+      padding-left: $padding-pc;
+    }
+  }

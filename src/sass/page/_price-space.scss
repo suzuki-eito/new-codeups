@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.price-space {
+  background-color: $lightBlue;
+  margin-top: rem(84);
+  padding-top: rem(84);
+  padding-bottom: rem(82);
+  @include mq("md") {
+    margin-top: rem(143);
+    padding-top: rem(100);
+    padding-bottom: rem(102);
+  }
+}

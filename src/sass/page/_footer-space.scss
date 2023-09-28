@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.footer-space {
+  background-color: $main;
+  // background-color: red;
+  padding: rem(48) 0 rem(56);
+  margin-top: rem(104);
+  @include mq("md") {
+    margin-top: rem(160);
+    padding: rem(80) 0;
+  }
+}
