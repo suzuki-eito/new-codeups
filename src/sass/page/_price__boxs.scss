@@ -14,12 +14,10 @@
   @include mq("md") {
     position: absolute;
     content: "";
-    // width: rem(437);
     width: 40.462962962962963%;
-
     height: rem(201);
     bottom: rem(-178);
-    left: calc(50% - min(50vw,620px));
+    left: calc(50% - min(calc(50vw - 10px),620px));
     background-image: url(../images/fish-icon.svg);
     background-repeat: no-repeat;
     background-size: contain;

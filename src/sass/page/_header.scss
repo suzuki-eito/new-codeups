@@ -12,11 +12,6 @@
   }
 }
 
-//hamburger-menuをクリックした時の挙動
-.js-block.is-active {
-  background-color: transparent;
-}
-
 .header__inner {
   height: inherit;
   padding-left: rem(15);
@@ -35,6 +30,14 @@
   background-color: rgba($color: #0D2936AD, $alpha: .68);
   z-index: 9999;
   transition: background-color .5s;
+}
+
+//hamburger-menuをクリックした時の挙動
+.header__block.is-active {
+  background-color: #408F95;
+  @include mq("md") {
+     background-color: rgba($color: #0D2936AD, $alpha: .68);
+  }
 }
 
 .header__content {

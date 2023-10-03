@@ -20,7 +20,7 @@
     height: rem(138);
     top: rem(-216);
     // left: rem(-80);
-    left: calc(50% - min(50vw,620px));
+    left: calc(50% - min(calc(50vw - 10px),620px));
     background-image: url(../images/fish-icon.svg);
     background-repeat: no-repeat;
     background-size: contain;

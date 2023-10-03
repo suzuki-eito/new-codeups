@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.campaign-space {
+    margin-top: rem(44);
+    overflow: hidden;
+    @include mq("md") {
+      margin-top: rem(120);
+    }
+}

@@ -34,11 +34,12 @@
   line-height: lh(48,40);
   text-transform: uppercase;
   letter-spacing: 0.54em;
-  transform: translateX(rem(11));
+  text-indent: 0.54em;
+  // transform: translateX(rem(11));
   @include mq("md") {
     font-size: rem(80);
     line-height: lh(100,80);
-    transform: translateX(rem(22));
+    // transform: translateX(rem(22));
   }
 }
 

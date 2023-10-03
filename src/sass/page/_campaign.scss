@@ -1,12 +1,6 @@
 @use "global" as *;
 
-.campaign {
-  margin-top: rem(44);
-  overflow: hidden;
-  @include mq("md") {
-    margin-top: rem(120);
-  }
-}
+
 
 .campaign__inner {
   padding-left: rem(15);

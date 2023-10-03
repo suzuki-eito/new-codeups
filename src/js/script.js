@@ -4,10 +4,12 @@ window.addEventListener('DOMContentLoaded',function(){
   const headerBlock = document.querySelector('.js-block');
   const hamburger = document.querySelector('.js-hamburger');
   const menu = document.querySelector('.js-menu');
+  const body =document.querySelector('body');
   hamburger.addEventListener('click',function(){
     headerBlock.classList.toggle('is-active');
     hamburger.classList.toggle('is-active');
-    menu.classList.toggle('is-active')
+    menu.classList.toggle('is-active');
+    body.classList.toggle('is-active');
   })
 });
 
@@ -41,7 +43,6 @@ const campaign__splide = new Splide('.campaign__splide',{
     768: {
       gap:'24px',
       fixedWidth:'280px',
-      fixedHeight:'380px',
       autoplay: true,
       interval: 5000,
     },
@@ -56,7 +57,7 @@ window.addEventListener('DOMContentLoaded',function(){
        {xPercent:0},
          {xPercent:101,scrollTrigger:{
           trigger:mask,
-          start:'top center',
+          start:'top bottom',
           toggleActions:'play none none reverse',
          }}
     );

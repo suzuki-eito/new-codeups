@@ -28,6 +28,14 @@
   margin-left: rem(22);
 }
 
+.hamburger-menu__left .menu:nth-of-type(1) .menu__title {
+  margin-top: 0;
+}
+
 .hamburger-menu__right {
-  margin-left: rem(22+6);
+  margin-left: rem(22+7);
+}
+
+.hamburger-menu__right .menu:nth-of-type(1) .menu__title {
+  margin-top: 0;
 }

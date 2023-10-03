@@ -3,6 +3,8 @@
 .campaign-card {
   box-shadow: 2px 2px 10px rgba($color: #000, $alpha: .25);
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .campaign-card__image {
@@ -25,9 +27,9 @@
 }
 
 .campaign-card__body {
-  padding: rem(16) rem(16) rem(23);
+  padding: rem(16) rem(16) rem(0);
   @include mq("md") {
-    padding: rem(24) rem(16) rem(40);
+    padding: rem(24) rem(16) rem(0);
   }
 }
 
@@ -67,7 +69,8 @@
 }
 
 .campaign-card__bottom {
-  margin-top: rem(10);
+  padding-top: rem(10);
+  margin-top: auto;
   text-align: center;
   @include mq("md") {
     text-align: left;
@@ -86,9 +89,11 @@
 
 .campaign-card__price {
   margin-top: rem(10);
+  padding-bottom: rem(23);
   @include mq("md") {
     margin-top: rem(9);
     margin-left: rem(19);
+    padding-bottom: rem(40);
   }
 }
 
