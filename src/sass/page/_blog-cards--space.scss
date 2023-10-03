@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.blog-cards--space {
+  margin-top: rem(28);
+   @include mq("md") {
+    margin-top: rem(80);
+  }
+}
