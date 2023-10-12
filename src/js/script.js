@@ -1,12 +1,12 @@
 
 //ハンバーガーメニューのアニメーション
 window.addEventListener('DOMContentLoaded',function(){
-  const headerBlock = document.querySelector('.js-block');
+  const header = document.querySelector('.js-header');
   const hamburger = document.querySelector('.js-hamburger');
   const menu = document.querySelector('.js-menu');
   const body =document.querySelector('body');
   hamburger.addEventListener('click',function(){
-    headerBlock.classList.toggle('is-active');
+    header.classList.toggle('is-active');
     hamburger.classList.toggle('is-active');
     menu.classList.toggle('is-active');
     body.classList.toggle('is-active');

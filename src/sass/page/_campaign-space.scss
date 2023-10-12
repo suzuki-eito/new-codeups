@@ -3,6 +3,7 @@
 .campaign-space {
     margin-top: rem(44);
     overflow: hidden;
+    padding-bottom: rem(5);
     @include mq("md") {
       margin-top: rem(120);
     }

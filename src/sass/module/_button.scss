@@ -10,6 +10,7 @@
   z-index: 0;
 }
 
+
 .button::before {
   position: absolute;
   content: "";
@@ -35,44 +36,7 @@
   z-index: 0;
 }
 
-.button__text {
-  font-family: $gotu;
-  font-size: rem(14);
-  line-height: lh(22,14);
-  color: $white;
-  transition: color .3s;
 
-  position: relative;
-  z-index: 1;
-}
-
-.button__text::before {
-  position: absolute;
-  content: "";
-  width: rem(40);
-  height: rem(1);
-  right: rem(-48);
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: $white;
-  transition: background-color .3s;
-  border-radius: 5px;
-  z-index: 1;
-}
-
-.button__text::after {
-  position: absolute;
-  content: "";
-  width: rem(8);
-  height: rem(1);
-  right: calc(rem(-48) - 1px);
-  top: calc(50% - 2px);
-  transform: translateY(-50%) rotate(37deg);
-  background-color: $white;
-  transition: background-color .3s;
-  border-radius: 5px;
-  z-index: 1;
-}
 
 //buttonをホバーした時の挙動
 .button:hover.button::after {

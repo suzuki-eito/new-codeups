@@ -4,10 +4,9 @@
   margin-top: rem(44);
   @include mq("md") {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
     gap: rem(40);
+    grid-template-columns: repeat(2,1fr);
     margin-top: rem(30);
   }
 }
@@ -20,7 +19,7 @@
     height: rem(138);
     top: rem(-216);
     // left: rem(-80);
-    left: calc(50% - min(calc(50vw - 10px),620px));
+    left: calc(50% - min(calc(48vw),rem(620)));
     background-image: url(../images/fish-icon.svg);
     background-repeat: no-repeat;
     background-size: contain;

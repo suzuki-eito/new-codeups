@@ -26,73 +26,71 @@
   <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 <body>
-  <header class="header">
-    <div class="header__block js-block">
-      <div class="header__inner">
-        <div class="header__content">
-          <h1 class="logo">
-            <a href="#">
-              <img width="102" height="38" src="./assets/images/logo.svg" alt="ロゴ画像が入ります">
-            </a>
-          </h1>
-            <nav class="header-nav pc-only">
-              <ul class="header-items">
-                <li class="header-item">
-                  <a href="#">
-                    <p class="header-item__en">campaign</p>
-                    <p class="header-item__jp">キャンペーン</p>
-                  </a>
-                </li>
-                <li class="header-item">
-                  <a href="#">
-                    <p class="header-item__en">about us</p>
-                    <p class="header-item__jp">私たちについて</p>
-                  </a>
-                </li>
-                <li class="header-item">
-                  <a href="#">
-                    <p class="header-item__en">information</p>
-                    <p class="header-item__jp">ダイビング情報</p>
-                  </a>
-                </li>
-                <li class="header-item">
-                  <a href="#">
-                    <p class="header-item__en">blog</p>
-                    <p class="header-item__jp">ブログ</p>
-                  </a>
-                </li>
-                <li class="header-item">
-                  <a href="#">
-                    <p class="header-item__en">voice</p>
-                    <p class="header-item__jp">お客様の声</p>
-                  </a>
-                </li>
-                <li class="header-item">
-                  <a href="#">
-                    <p class="header-item__en">price</p>
-                    <p class="header-item__jp">料金一覧</p>
-                  </a>
-                </li>
-                <li class="header-item">
-                  <a href="#">
-                    <p class="header-item__en">FAQ</p>
-                    <p class="header-item__jp">よくある質問</p>
-                  </a>
-                </li>
-                <li class="header-item">
-                  <a href="#">
-                    <p class="header-item__en">contact</p>
-                    <p class="header-item__jp">お問合せ</p>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          <button class="hamburger js-hamburger sp-only">
-            <span class="hamburger__line"></span>
-            <span class="hamburger__line"></span>
-            <span class="hamburger__line"></span>
-          </button>
-        </div>
+  <header class="header js-header">
+    <div class="header__inner">
+      <div class="header__content">
+        <h1 class="logo">
+          <a href="#">
+            <img width="102" height="38" src="./assets/images/logo.svg" alt="ロゴ画像が入ります">
+          </a>
+        </h1>
+          <nav class="header-nav pc-only">
+            <ul class="header-items">
+              <li class="header-item">
+                <a href="#">
+                  <p class="header-item__en">campaign</p>
+                  <p class="header-item__jp">キャンペーン</p>
+                </a>
+              </li>
+              <li class="header-item">
+                <a href="#">
+                  <p class="header-item__en">about us</p>
+                  <p class="header-item__jp">私たちについて</p>
+                </a>
+              </li>
+              <li class="header-item">
+                <a href="#">
+                  <p class="header-item__en">information</p>
+                  <p class="header-item__jp">ダイビング情報</p>
+                </a>
+              </li>
+              <li class="header-item">
+                <a href="#">
+                  <p class="header-item__en">blog</p>
+                  <p class="header-item__jp">ブログ</p>
+                </a>
+              </li>
+              <li class="header-item">
+                <a href="#">
+                  <p class="header-item__en">voice</p>
+                  <p class="header-item__jp">お客様の声</p>
+                </a>
+              </li>
+              <li class="header-item">
+                <a href="#">
+                  <p class="header-item__en">price</p>
+                  <p class="header-item__jp">料金一覧</p>
+                </a>
+              </li>
+              <li class="header-item">
+                <a href="#">
+                  <p class="header-item__en">FAQ</p>
+                  <p class="header-item__jp">よくある質問</p>
+                </a>
+              </li>
+              <li class="header-item">
+                <a href="#">
+                  <p class="header-item__en">contact</p>
+                  <p class="header-item__jp">お問合せ</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        <button class="hamburger js-hamburger sp-only">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
       </div>
     </div>
     <nav class="hamburger-menu js-menu">
@@ -204,7 +202,7 @@
         </ul>
       </div>
       <div class="fv__block">
-        <h1 class="fv__title">diving</h1>
+        <p class="fv__title">diving</p>
         <p class="fv__sub-title">into the ocean</p>
       </div>
     </section>
@@ -214,14 +212,14 @@
           <p class="section__title--en">campaign</p>
           <h2 class="section__title--jp">キャンペーン</h2>
         </div>
-        <section class="splide campaign__splide" aria-label="Splideの基本的なHTML">
+        <div class="splide campaign__splide" role="group" aria-label="Splideの基本的なHTML">
           <div class="splide__arrows campaign__arrows">
             <button class="splide__arrow splide__arrow--prev campaign__arrow campaign__prev">
             </button>
             <button class="splide__arrow splide__arrow--next campaign__arrow campaign__next">
             </button>
           </div>
-          <div class="splide__track">
+          <div class="splide__track campaign__track">
             <ul class="splide__list">
               <li class="splide__slide campaign__slide">
                 <a href="#" class="campaign-card">
@@ -333,7 +331,7 @@
               </li>
             </ul>
           </div>
-        </section>
+        </div>
       </div>
       <div class="campaign__button">
         <a href="#" class="button">
@@ -433,7 +431,7 @@
           <p class="section__title--en section__title--white">Blog</p>
           <h2 class="section__title--jp section__title--white">ブログ</h2>
         </div>
-        <ul class="blog-cards blog-cards--space">
+        <ul class="blog-cards blog__items">
           <li class="blog-card">
             <a href="#">
               <figure class="blog-card__image">
@@ -572,11 +570,11 @@
             <span class="opening-mask"></span>
             <picture>
               <!-- ブラウザ幅769px〜最大幅までのwebp画像が表示 -->
-              <source srcset="./assets/images/price-pc.webp" media="(min-width: 769px)" type="image/webp">
+              <source srcset="./assets/images/price-pc.webp" media="(min-width: 768px)" type="image/webp">
               <!-- ブラウザ幅769px〜最大幅までの画像が表示 -->
-              <source srcset="./assets/images/price-pc.jpg" media="(min-width: 769px)" type="image/jpg">
+              <source srcset="./assets/images/price-pc.jpg" media="(min-width: 768px)" type="image/jpg">
               <!-- 最小幅〜ブラウザ幅768pxまでのwebp画像が表示 -->
-              <source srcset="./assets/images/price.webp" media="(max-width: 768px)" type="image/webp">
+              <source srcset="./assets/images/price.webp" media="(max-width: 767px)" type="image/webp">
               <!-- 最小幅〜ブラウザ幅768pxまでの画像が表示 -->
               <img width="345" height="227" loading="lazy" src="./assets/images/price.jpg" alt="">
             </picture>

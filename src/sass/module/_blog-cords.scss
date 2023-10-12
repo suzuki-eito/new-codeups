@@ -2,10 +2,9 @@
 
 .blog-cards {
   @include mq("md") {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
     gap: rem(40);
+    grid-template-columns: repeat(3,1fr);
     position: relative;
   }
 }
@@ -18,7 +17,7 @@
     height: rem(201);
     top: rem(-222);
     left: rem(-80);
-    left: calc(50% - min(calc(50vw - 10px),620px));
+    left: calc(50% - min(calc(48vw),rem(620)));
     background-image: url(../images/fish-icon--white.svg);
     background-repeat: no-repeat;
     background-size: contain;

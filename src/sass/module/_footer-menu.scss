@@ -22,11 +22,6 @@
   margin-top: 0;
 }
 
-// .footer-menu__center-left {
-//   @include mq("md") {
-//     margin-left: rem(142);
-//   }
-// }
 //PCサイズの指定
 .footer-menu__center-left .menu:first-of-type .menu__title {
   @include mq("md") {
@@ -45,21 +40,10 @@
   }
 }
 
-// .footer-menu__center-right {
-//   @include mq("md") {
-//     margin-left: rem(142);
-//   }
-// }
-
 //スマホサイズの指定
 .footer-menu__center-right .menu:first-of-type .menu__title {
   margin-top: 0;
 }
-// .footer-menu__right {
-//   @include mq("md") {
-//     margin-left: rem(142);
-//   }
-// }
 
 //PCサイズの指定
 .footer-menu__right .menu:first-of-type .menu__title {

@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.information {
+  background-color: $lightBlue;
+  padding: rem(84) 0;
+   @include mq("md") {
+    padding: rem(100) 0;
+  }
+}

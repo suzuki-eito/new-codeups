@@ -1,5 +1,17 @@
 @use "global" as *;
 
+.campaign__splide {
+  margin-top: rem(28);
+  margin-right: calc( 50% - 50vw );
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.campaign__track {
+  padding-bottom: rem(10);
+}
+
 .campaign__pagination {
   display: none;
 }
@@ -7,21 +19,21 @@
 .campaign__arrows {
   display: none;
   @include mq("md") {
-    display: block;
+    display: flex;
     position: absolute;
-    top: -25px;
-    right: 0px;
+    top: rem(-105);
+    right: calc(50% - max(rem(180),rem(350)));
+    gap: rem(80);
   }
 }
 
 .campaign__arrow {
   @include mq("md") {
-    top: initial;
-    right: rem(180);
     background-color: transparent;
+    position: relative;
+    transform: initial;
     width: rem(80);
     height: rem(80);
-    transform: translateY(-100%);
   }
 }
 
@@ -47,7 +59,16 @@
 .campaign__prev {
   @include mq("md") {
     left: initial;
-    right: rem(340);
   }
 }
 
+.campaign__next {
+   @include mq("md") {
+    right: initial;
+  }
+}
+
+.campaign__slide {
+  display: flex;
+  align-items: stretch;
+}

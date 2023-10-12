@@ -44,3 +44,7 @@
   line-height: lh(18,16);
 }
 
+.menu__title:hover,
+.menu__item:hover {
+  opacity: .6;
+}

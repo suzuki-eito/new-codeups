@@ -11,31 +11,3 @@
     padding: rem(80) 0;
   }
 }
-
-// .contact__blocks::before {
-//   position: absolute;
-//   content: "";
-//   width: 29.066666666666667%;
-//   // height: 13.333333333333333%;
-//   height: 100%;
-//   top: 0;
-//   right: 0;
-//   transform: translate(43%,-29%);
-//   background-image: url(../images/fish-icon.svg);
-//   background-repeat: no-repeat;
-//   background-size: contain;
-//   background-position: center;
-//   @include mq("md") {
-//     width: 27.87037037037037%;
-//     height: 33.276265342046249%;
-//     top: 0;
-//     right: 0;
-//     transform: translate(43%,-29%);
-//     background-repeat: no-repeat;
-//     background-size: contain;
-//     background-position: center;
-//   }
-//   @media screen and (max-width: 1350px) {
-//     transform: translate(7%,-29%);
-//   }
-// }
