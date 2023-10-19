@@ -1,6 +1,10 @@
 @use "global" as *;
 
 //スライダーの記述
+.fv {
+  position: relative;
+}
+
 .fv__arrows {
   display: none;
 }
@@ -15,9 +19,6 @@
   aspect-ratio: 375/667;
 }
 
-.fv__splide {
-  position: relative;
-}
 
 .fv__block {
   position: absolute;
@@ -35,11 +36,9 @@
   text-transform: uppercase;
   letter-spacing: 0.54em;
   text-indent: 0.54em;
-  // transform: translateX(rem(11));
   @include mq("md") {
     font-size: rem(80);
     line-height: lh(100,80);
-    // transform: translateX(rem(22));
   }
 }
 

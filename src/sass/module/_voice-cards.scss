@@ -1,13 +1,11 @@
 @use "global" as *;
 
 .voice-cards {
-  margin-top: rem(44);
   @include mq("md") {
     position: relative;
     display: grid;
     gap: rem(40);
     grid-template-columns: repeat(2,1fr);
-    margin-top: rem(30);
   }
 }
 

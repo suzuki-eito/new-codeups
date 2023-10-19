@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.contact__title {
+.contact-bottom-title {
   text-align: center;
 }
 
-.contact__title--en {
+.contact-bottom-title__en {
   font-size: rem(80);
   font-family: $gotu;
   font-weight: 400;
@@ -12,12 +12,12 @@
   line-height: lh(80,80);
 }
 
-.contact__title--en::first-letter {
+.contact-bottom-title__en::first-letter {
   color: $main;
   text-transform: uppercase;
 }
 
-.contact__title--jp {
+.contact-bottom-title__jp {
   font-size: rem(12);
   font-family: $noto-sans;
   font-weight: 400;
@@ -26,7 +26,7 @@
   margin-top: rem(-6);
 }
 
-.contact__title--link {
+.contact-bottom-title__link {
   display: inline-block;
   font-size: rem(14);
   font-family: $noto-sans;

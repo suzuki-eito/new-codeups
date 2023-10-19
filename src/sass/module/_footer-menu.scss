@@ -2,10 +2,8 @@
 
 .footer-menu {
   display: flex;
-  margin-top: rem(38);
   @include mq("md") {
     justify-content: space-between;
-    margin-top: rem(22);
     max-width: 986px;
     transform: translateX(22px);
   }
@@ -13,7 +11,6 @@
 .footer-menu__lefts {
   margin-left: rem(22);
   @include mq("md") {
-    // display: flex;
     display: contents;
   }
 }
@@ -29,13 +26,9 @@
   }
 }
 
-
-
 .footer-menu__rights {
   margin-left: rem(38);
   @include mq("md") {
-    // display: flex;
-    // margin-left: 0;
     display: contents;
   }
 }

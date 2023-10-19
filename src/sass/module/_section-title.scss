@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.section__title {
+.section-title {
   text-align: center;
 }
 
-.section__title--en {
+.section-title__en {
   font-size: rem(32);
   font-family: $gotu;
   font-weight: 400;
@@ -15,12 +15,12 @@
   }
 }
 
-.section__title--en::first-letter {
+.section-title__en::first-letter {
   color: $main;
   text-transform: uppercase;
 }
 
-.section__title--jp {
+.section-title__jp {
   font-size: rem(12);
   font-family: $noto-sans;
   font-weight: 400;
@@ -29,12 +29,13 @@
   margin-top: rem(8);
 }
 
-.section__title--white {
+.section-title__en--white,
+.section-title__jp--white {
   @include mq("md") {
     color: $white;
   }
 }
-.section__title--white::first-letter {
+.section-title__en--white::first-letter {
   @include mq("md") {
     color: $white;
   }

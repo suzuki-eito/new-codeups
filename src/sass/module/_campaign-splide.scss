@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.campaign__splide {
+.campaign-splide {
   margin-top: rem(28);
   margin-right: calc( 50% - 50vw );
   @include mq("md") {
@@ -8,15 +8,15 @@
   }
 }
 
-.campaign__track {
+.campaign-splide__track {
   padding-bottom: rem(10);
 }
 
-.campaign__pagination {
+.campaign-splide__pagination {
   display: none;
 }
 
-.campaign__arrows {
+.campaign-splide__arrows {
   display: none;
   @include mq("md") {
     display: flex;
@@ -27,7 +27,7 @@
   }
 }
 
-.campaign__arrow {
+.campaign-splide__arrow {
   @include mq("md") {
     background-color: transparent;
     position: relative;
@@ -37,7 +37,7 @@
   }
 }
 
-.campaign__arrow::before {
+.campaign-splide__arrow::before {
   @include mq("md") {
     position: absolute;
     content: "";
@@ -48,27 +48,27 @@
   }
 }
 
-.campaign__prev::before {
+.campaign-splide__arrow--prev::before {
   background-image: url(../images/campaign-prev.svg);
 }
 
-.campaign__next::before {
+.campaign-splide__arrow--next::before {
   background-image: url(../images/campaign-next.svg);
 }
 
-.campaign__prev {
+.campaign-splide__arrow--prev {
   @include mq("md") {
     left: initial;
   }
 }
 
-.campaign__next {
+.campaign-splide__arrow--next {
    @include mq("md") {
     right: initial;
   }
 }
 
-.campaign__slide {
+.campaign-splide__slide {
   display: flex;
   align-items: stretch;
 }

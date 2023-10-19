@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded',function(){
 });
 
 //FVのスライダー
-const fv__splide = new Splide('.fv__splide',{
+const fvSplide = new Splide('.js-fv-splide',{
   type: "fade",
   rewind: true,
   speed: 2000,
@@ -30,13 +30,13 @@ const fv__splide = new Splide('.fv__splide',{
 }).mount();
 
 //campaignのスライド
-const campaign__splide = new Splide('.campaign__splide',{
+const campaign__splide = new Splide('.js-campaign',{
   type:'loop',
   gap:'40px',
   fixedWidth:'333px',
   classes: {
     //ページネーション
-    pagination: 'splide__pagination campaign__pagination',
+    pagination: 'splide__pagination campaign-splide__pagination',
   },
   //768px以下の時
   breakpoints: {
@@ -51,7 +51,7 @@ const campaign__splide = new Splide('.campaign__splide',{
 
 window.addEventListener('DOMContentLoaded',function(){
   //マスクアニメーション
-  gsap.utils.toArray('.opening-mask').forEach((mask) =>{
+  gsap.utils.toArray('.js-opening-mask').forEach((mask) =>{
     gsap.fromTo(
        mask,
        {xPercent:0},

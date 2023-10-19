@@ -24,61 +24,65 @@
   <!-- css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script defer src="./assets/js/script.js"></script>
 </head>
 <body>
   <header class="header js-header">
     <div class="header__inner">
       <div class="header__content">
-        <h1 class="logo">
+        <h1 class="header__logo">
           <a href="#">
             <img width="102" height="38" src="./assets/images/logo.svg" alt="ロゴ画像が入ります">
           </a>
         </h1>
-          <nav class="header-nav pc-only">
-            <ul class="header-items">
-              <li class="header-item">
+          <nav class="header__nav header-nav pc-only">
+            <ul class="header-nav__items header-items">
+              <li class="header-items__list header-item">
                 <a href="#">
                   <p class="header-item__en">campaign</p>
                   <p class="header-item__jp">キャンペーン</p>
                 </a>
               </li>
-              <li class="header-item">
+              <li class="header-items__list header-item">
                 <a href="#">
                   <p class="header-item__en">about us</p>
                   <p class="header-item__jp">私たちについて</p>
                 </a>
               </li>
-              <li class="header-item">
+              <li class="header-items__list header-item">
                 <a href="#">
                   <p class="header-item__en">information</p>
                   <p class="header-item__jp">ダイビング情報</p>
                 </a>
               </li>
-              <li class="header-item">
+              <li class="header-items__list header-item">
                 <a href="#">
                   <p class="header-item__en">blog</p>
                   <p class="header-item__jp">ブログ</p>
                 </a>
               </li>
-              <li class="header-item">
+              <li class="header-items__list header-item">
                 <a href="#">
                   <p class="header-item__en">voice</p>
                   <p class="header-item__jp">お客様の声</p>
                 </a>
               </li>
-              <li class="header-item">
+              <li class="header-items__list header-item">
                 <a href="#">
                   <p class="header-item__en">price</p>
                   <p class="header-item__jp">料金一覧</p>
                 </a>
               </li>
-              <li class="header-item">
+              <li class="header-items__list header-item">
                 <a href="#">
                   <p class="header-item__en">FAQ</p>
                   <p class="header-item__jp">よくある質問</p>
                 </a>
               </li>
-              <li class="header-item">
+              <li class="header-items__list header-item">
                 <a href="#">
                   <p class="header-item__en">contact</p>
                   <p class="header-item__jp">お問合せ</p>
@@ -86,17 +90,17 @@
               </li>
             </ul>
           </nav>
-        <button class="hamburger js-hamburger sp-only">
+        <button class="header__hamburger hamburger js-hamburger sp-only">
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
           <span class="hamburger__line"></span>
         </button>
       </div>
     </div>
-    <nav class="hamburger-menu js-menu">
-      <div class="hamburger__inner">
+    <nav class="header__hamburger-menu hamburger-menu js-menu">
+      <div class="hamburger-menu__inner">
         <div class="hamburger-menu__left">
-          <div class="menu menu__box">
+          <div class="hamburger-menu__menu menu">
             <a href="#" class="menu__title js-link">キャンペーン</a>
             <ul class="menu__items">
               <li class="menu__item"><a class="js-link" href="#">ライセンス取得</a></li>
@@ -104,10 +108,10 @@
               <li class="menu__item"><a class="js-link" href="#">ナイトダイビング</a></li>
             </ul>
           </div>
-          <div class="menu menu__box">
+          <div class="hamburger-menu__menu menu">
             <a href="#" class="menu__title js-link">私たちについて</a>
           </div>
-          <div class="menu menu__box">
+          <div class="hamburger-menu__menu menu">
             <a href="#" class="menu__title js-link">ダイビング情報</a>
             <ul class="menu__items">
               <li class="menu__item"><a class="js-link" href="#">ライセンス講習</a></li>
@@ -115,15 +119,15 @@
               <li class="menu__item"><a class="js-link" href="#">ファンダイビング</a></li>
             </ul>
           </div>
-          <div class="menu menu__box">
+          <div class="hamburger-menu__menu menu">
             <a href="#" class="menu__title js-link">ブログ</a>
           </div>
         </div>
         <div class="hamburger-menu__right">
-          <div class="menu menu__box">
+          <div class="hamburger-menu__menu menu">
             <a href="#" class="menu__title js-link">お客様の声</a>
           </div>
-          <div class="menu menu__box">
+          <div class="hamburger-menu__menu menu">
             <a href="#" class="menu__title js-link">料金一覧</a>
             <ul class="menu__items">
               <li class="menu__item"><a class="js-link" href="#">ライセンス講習</a></li>
@@ -131,16 +135,16 @@
               <li class="menu__item"><a class="js-link" href="#">ファンダイビング</a></li>
             </ul>
           </div>
-          <div class="menu menu__box">
+          <div class="hamburger-menu__menu menu">
             <a href="#" class="menu__title js-link">よくある質問</a>
           </div>
-          <div class="menu menu__box">
+          <div class="hamburger-menu__menu menu">
             <a href="#" class="menu__title js-link">プライバシー<br>ポリシー</a>
           </div>
-          <div class="menu menu__box">
+          <div class="hamburger-menu__menu menu">
             <a href="#" class="menu__title js-link">利用規約</a>
           </div>
-          <div class="menu menu__box">
+          <div class="hamburger-menu__menu menu">
             <a href="#" class="menu__title js-link">おい問わ合せ</a>
           </div>
         </div>
@@ -148,7 +152,7 @@
     </nav>
   </header>
   <main>
-    <section class="splide fv__splide" aria-label="Splideの基本的なHTML">
+    <section class="splide fv js-fv-splide" aria-label="Splideの基本的なHTML">
       <div class="splide__track">
         <ul class="splide__list fv__list">
           <li class="splide__slide fv__slide">
@@ -208,21 +212,21 @@
     </section>
     <section class="campaign campaign-space">
       <div class="inner">
-        <div class="section__title">
-          <p class="section__title--en">campaign</p>
-          <h2 class="section__title--jp">キャンペーン</h2>
+        <div class="campaign__title section-title">
+          <p class="section-title__en">campaign</p>
+          <h2 class="section-title__jp">キャンペーン</h2>
         </div>
-        <div class="splide campaign__splide" role="group" aria-label="Splideの基本的なHTML">
-          <div class="splide__arrows campaign__arrows">
-            <button class="splide__arrow splide__arrow--prev campaign__arrow campaign__prev">
+        <div class="splide campaign__splide campaign-splide js-campaign" role="group" aria-label="Splideの基本的なHTML">
+          <div class="splide__arrows campaign-splide__arrows">
+            <button class="splide__arrow splide__arrow--prev campaign-splide__arrow campaign-splide__arrow--prev">
             </button>
-            <button class="splide__arrow splide__arrow--next campaign__arrow campaign__next">
+            <button class="splide__arrow splide__arrow--next campaign-splide__arrow campaign-splide__arrow--next">
             </button>
           </div>
-          <div class="splide__track campaign__track">
+          <div class="splide__track campaign-splide__track">
             <ul class="splide__list">
-              <li class="splide__slide campaign__slide">
-                <a href="#" class="campaign-card">
+              <li class="splide__slide campaign-splide__slide">
+                <a href="#" class="campaign-splide__card campaign-card">
                   <figure class="campaign-card__image">
                     <picture>
                       <!-- ブラウザ幅769px〜最大幅までのwebp画像が表示 -->
@@ -248,7 +252,7 @@
                     </div>
                 </a>
               </li>
-              <li class="splide__slide campaign__slide">
+              <li class="splide__slide campaign-splide__slide">
                 <a href="#" class="campaign-card">
                   <figure class="campaign-card__image">
                     <picture>
@@ -275,7 +279,7 @@
                     </div>
                 </a>
               </li>
-              <li class="splide__slide campaign__slide">
+              <li class="splide__slide campaign-splide__slide">
                 <a href="#" class="campaign-card">
                   <figure class="campaign-card__image">
                     <picture>
@@ -302,7 +306,7 @@
                     </div>
                 </a>
               </li>
-              <li class="splide__slide campaign__slide">
+              <li class="splide__slide campaign-splide__slide">
                 <a href="#" class="campaign-card">
                   <figure class="campaign-card__image">
                     <picture>
@@ -340,9 +344,9 @@
       </div>
     </section>
     <section class="about about-space">
-      <div class="section__title">
-        <p class="section__title--en">about us</p>
-        <h2 class="section__title--jp">私たちについて</h2>
+      <div class="about__section-title section-title">
+        <p class="section-title__en">about us</p>
+        <h2 class="section-title__jp">私たちについて</h2>
       </div>
       <div class="inner">
         <div class="about__images">
@@ -392,13 +396,13 @@
     </section>
     <section class="information information-space">
       <div class="inner">
-        <div class="section__title">
-          <p class="section__title--en">information</p>
-          <h2 class="section__title--jp">ダイビング情報</h2>
+        <div class="information__section-title section-title">
+          <p class="section-title__en">information</p>
+          <h2 class="section-title__jp">ダイビング情報</h2>
         </div>
         <div class="information__box">
           <figure class="information__image">
-            <span class="opening-mask"></span>
+            <span class="opening-mask js-opening-mask"></span>
             <picture>
               <!-- ブラウザ幅769px〜最大幅までのwebp画像が表示 -->
               <source srcset="./assets/images/information-pc.webp" media="(min-width: 769px)" type="image/webp">
@@ -427,12 +431,12 @@
     </section>
     <section class="blog blog-space">
       <div class="blog__inner">
-        <div class="section__title">
-          <p class="section__title--en section__title--white">Blog</p>
-          <h2 class="section__title--jp section__title--white">ブログ</h2>
+        <div class="blog__title section-title">
+          <p class="section-title__en section-title__en--white">Blog</p>
+          <h2 class="section-title__jp section-title__jp--white">ブログ</h2>
         </div>
-        <ul class="blog-cards blog__items">
-          <li class="blog-card">
+        <ul class="blog__items blog-cards">
+          <li class="blog-cards__item blog-card">
             <a href="#">
               <figure class="blog-card__image">
                 <picture>
@@ -450,7 +454,7 @@
               </div>
             </a>
           </li>
-          <li class="blog-card">
+          <li class="blog-cards__item blog-card">
             <a href="#">
               <figure class="blog-card__image">
                 <picture>
@@ -468,7 +472,7 @@
               </div>
             </a>
           </li>
-          <li class="blog-card">
+          <li class="blog-cards__item blog-card">
             <a href="">
               <figure class="blog-card__image">
                 <picture>
@@ -494,14 +498,14 @@
         </div>
       </div>
     </section>
-    <section class="voice">
+    <section class="voice voice-space">
       <div class="inner">
-        <div class="section__title">
-          <p class="section__title--en">voice</p>
-          <h2 class="section__title--jp">お客様の声</h2>
+        <div class="voice__title section-title">
+          <p class="section-title__en">voice</p>
+          <h2 class="section-title__jp">お客様の声</h2>
         </div>
-        <ul class="voice-cards">
-          <li class="voice-card">
+        <ul class="voice__cards voice-cards">
+          <li class="voice-cards__item voice-card">
             <div class="voice-card__box">
               <div class="voice-card__left">
                 <div class="voice-card__info">
@@ -512,7 +516,7 @@
               </div>
               <div class="voice-card__right">
                 <figure class="voice-card__image">
-                  <span class="opening-mask"></span>
+                  <span class="opening-mask js-opening-mask"></span>
                   <picture>
                     <source srcset="./assets/images/voice1.webp" type="image/webp">
                     <img width="151" height="117" loading="lazy" src="./assets/images/voice1.jpg" alt="">
@@ -526,7 +530,7 @@
               ここにテキストが入ります。ここにテキストが入ります。
             </p>
           </li>
-          <li class="voice-card">
+          <li class="voice-cards__item voice-card">
             <div class="voice-card__box">
               <div class="voice-card__left">
                 <div class="voice-card__info">
@@ -537,7 +541,7 @@
               </div>
               <div class="voice-card__right">
                 <figure class="voice-card__image">
-                  <span class="opening-mask"></span>
+                  <span class="opening-mask js-opening-mask"></span>
                   <picture>
                     <source srcset="./assets/images/voice2.webp" type="image/webp">
                     <img width="151" height="117" loading="lazy" src="./assets/images/voice2.jpg" alt="">
@@ -561,13 +565,13 @@
     </section>
     <section class="price price-space">
       <div class="inner">
-        <div class="section__title">
-          <p class="section__title--en">price</p>
-          <h2 class="section__title--jp">料金一覧</h2>
+        <div class="price__title section-title">
+          <p class="section-title__en">price</p>
+          <h2 class="section-title__jp">料金一覧</h2>
         </div>
         <div class="price__boxs">
           <figure class="price__image">
-            <span class="opening-mask"></span>
+            <span class="opening-mask js-opening-mask"></span>
             <picture>
               <!-- ブラウザ幅769px〜最大幅までのwebp画像が表示 -->
               <source srcset="./assets/images/price-pc.webp" media="(min-width: 768px)" type="image/webp">
@@ -579,8 +583,8 @@
               <img width="345" height="227" loading="lazy" src="./assets/images/price.jpg" alt="">
             </picture>
           </figure>
-          <div class="price-lists">
-            <dl class="price-list">
+          <div class="price__items price-lists">
+            <dl class="price-lists__item price-list">
               <dt class="price-list__title">ライセンス講習</dt>
               <dd class="price-list__box">
                 <p class="price-list__text">オープンウォーターダイバーコース</p>
@@ -595,7 +599,7 @@
                 <p class="price-list__text price-list__space">¥70,000</p>
               </dd>
             </dl>
-            <dl class="price-list">
+            <dl class="price-lists__item price-list">
               <dt class="price-list__title">体験ダイビング</dt>
               <dd class="price-list__box">
                 <p class="price-list__text">ビーチ体験ダイビング(半日)</p>
@@ -614,7 +618,7 @@
                 <p class="price-list__text price-list__space">¥18,000</p>
               </dd>
             </dl>
-            <dl class="price-list">
+            <dl class="price-lists__item price-list">
               <dt class="price-list__title">ファンダイビング</dt>
               <dd class="price-list__box">
                 <p class="price-list__text">ビーチダイビング(2ダイブ)</p>
@@ -633,7 +637,7 @@
                 <p class="price-list__text price-list__space">¥10,000</p>
               </dd>
             </dl>
-            <dl class="price-list">
+            <dl class="price-lists__item price-list">
               <dt class="price-list__title">スペシャルダイビング</dt>
               <dd class="price-list__box">
                 <p class="price-list__text">貸切ダイビング(2ダイブ)</p>
@@ -656,36 +660,40 @@
     <section class="contact contact-space">
       <div class="inner">
         <div class="contact__blocks">
-          <figure class="contact__image--sub">
+          <figure class="contact__image">
             <img width="109" height="50" loading="lazy" src="./assets/images/fish-icon.svg" alt="魚のアイコンが入ります">
           </figure>
-          <div class="contact-top__inner">
-            <div class="contact__images">
-              <figure class="contact__image--main">
-                  <img width="174" height="65" loading="lazy" src="./assets/images/logo-contact.svg" alt="codeups">
-              </figure>
-            </div>
-            <div class="contact__block">
-              <ul class="contact__box">
-                <li class="contact__info">沖縄県那覇市1-1</li>
-                <li class="contact__info">TEL:0120-000-0000</li>
-                <li class="contact__info">営業時間:8:30-19:00</li>
-                <li class="contact__info">定休日:毎週火曜日</li>
-              </ul>
-              <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14316.771041208574!2d127.67643489560147!3d26.222925574743197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5696278d6553b%3A0xcb44277c653ed00b!2z44CSOTAwLTAwMDYg5rKW57iE55yM6YKj6KaH5biC44GK44KC44KN44G-44Gh77yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1693501469366!5m2!1sja!2sjp" width="295" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="contact__top contact-top">
+            <div class="contact-top__inner">
+              <div class="contact-top__images">
+                <figure class="contact-top__image">
+                    <img width="174" height="65" loading="lazy" src="./assets/images/logo-contact.svg" alt="codeups">
+                </figure>
+              </div>
+              <div class="contact-top__block">
+                <ul class="contact-top__infos">
+                  <li class="contact__info">沖縄県那覇市1-1</li>
+                  <li class="contact__info">TEL:0120-000-0000</li>
+                  <li class="contact__info">営業時間:8:30-19:00</li>
+                  <li class="contact__info">定休日:毎週火曜日</li>
+                </ul>
+                <iframe class="contact-top__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14316.771041208574!2d127.67643489560147!3d26.222925574743197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5696278d6553b%3A0xcb44277c653ed00b!2z44CSOTAwLTAwMDYg5rKW57iE55yM6YKj6KaH5biC44GK44KC44KN44G-44Gh77yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1693501469366!5m2!1sja!2sjp" width="295" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
             </div>
           </div>
-          <div class="contact-bottom__inner">
-            <div class="contact__title">
-              <p class="contact__title--en">contact</p>
-              <h2 class="contact__title--jp sp-only">お問合せ</h2>
-              <h2 class="contact__title--jp pc-only">お問い合わせ</h2>
-              <a href="#" class="contact__title--link">ご予約・お問い合わせはコチラ</a>
-            </div>
-            <div class="contact__button">
-              <a href="#" class="button">
-                <span class="button__text">Contact us</span>
-              </a>
+          <div class="contact__bottom contact-bottom">
+            <div class="contact-bottom__inner">
+              <div class="contact-bottom__title contact-bottom-title">
+                <p class="contact-bottom-title__en">contact</p>
+                <h2 class="contact-bottom-title__jp sp-only">お問合せ</h2>
+                <h2 class="contact-bottom-title__jp pc-only">お問い合わせ</h2>
+                <a href="#" class="contact-bottom-title__link">ご予約・お問い合わせはコチラ</a>
+              </div>
+              <div class="contact__button">
+                <a href="#" class="button">
+                  <span class="button__text">Contact us</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -693,7 +701,7 @@
     </section>
   </main>
   <footer class="footer footer-space js-footer">
-    <div class="to-top js-to-top">
+    <div class="footer__to-top to-top js-to-top">
       <a href="#" class="to-top__link">
         <img width="48" height="48" loading="lazy" src="./assets/images/to-top.svg" alt="トップへ戻る">
       </a>
@@ -712,10 +720,10 @@
           </figure>
         </div>
       </div>
-      <div class="footer-menu">
+      <div class="footer__menu footer-menu">
         <div class="footer-menu__lefts">
           <div class="footer-menu__left">
-            <div class="menu menu__box">
+            <div class="footer-menu__menu menu menu__box">
               <a href="#" class="menu__title js-link">キャンペーン</a>
               <ul class="menu__items">
                 <li class="menu__item"><a class="js-link" href="#">ライセンス取得</a></li>
@@ -723,12 +731,12 @@
                 <li class="menu__item"><a class="js-link" href="#">ナイトダイビング</a></li>
               </ul>
             </div>
-            <div class="menu menu__box">
+            <div class="footer-menu__menu menu menu__box">
               <a href="#" class="menu__title js-link">私たちについて</a>
             </div>
           </div>
           <div class="footer-menu__center-left">
-            <div class="menu menu__box">
+            <div class="footer-menu__menu menu menu__box">
               <a href="#" class="menu__title js-link">ダイビング情報</a>
               <ul class="menu__items">
                 <li class="menu__item"><a class="js-link" href="#">ライセンス講習</a></li>
@@ -736,17 +744,17 @@
                 <li class="menu__item"><a class="js-link" href="#">ファンダイビング</a></li>
               </ul>
             </div>
-            <div class="menu menu__box">
+            <div class="footer-menu__menu menu menu__box">
               <a href="#" class="menu__title js-link">ブログ</a>
             </div>
           </div>
         </div>
         <div class="footer-menu__rights">
           <div class="footer-menu__center-right">
-            <div class="menu menu__box">
+            <div class="footer-menu__menu menu menu__box">
               <a href="#" class="menu__title js-link">お客様の声</a>
             </div>
-            <div class="menu menu__box">
+            <div class="footer-menu__menu menu menu__box">
               <a href="#" class="menu__title js-link">料金一覧</a>
               <ul class="menu__items">
                 <li class="menu__item"><a class="js-link" href="#">ライセンス講習</a></li>
@@ -756,16 +764,16 @@
             </div>
           </div>
           <div class="footer-menu__right">
-            <div class="menu menu__box">
+            <div class="footer-menu__menu menu menu__box">
               <a href="#" class="menu__title js-link">よくある質問</a>
             </div>
-            <div class="menu menu__box">
+            <div class="footer-menu__menu menu menu__box">
               <a href="#" class="menu__title js-link">プライバシー<br class="sp-only">ポリシー</a>
             </div>
-            <div class="menu menu__box">
+            <div class="footer-menu__menu menu menu__box">
               <a href="#" class="menu__title js-link">利用規約</a>
             </div>
-            <div class="menu menu__box">
+            <div class="footer-menu__menu menu menu__box">
               <a href="#" class="menu__title js-link">おい問わ合せ</a>
             </div>
           </div>
@@ -774,9 +782,5 @@
     </div>
     <small class="copyright">Copyright &copy; 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>
   </footer>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-  <script defer src="./assets/js/script.js"></script>
 </body>
 </html>
